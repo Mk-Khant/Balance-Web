@@ -1,83 +1,22 @@
-# onestop-12
-FInal Project
+# Balance-Web
 
-## Create React Project
+Full-stack web application developed using Java (Spring Boot) and React.
 
-Create React Project with vite
+## Features
+- User authentication (Login / Register)
+- Subscription management
+- Member dashboard
 
-```
-npm create vite@latest
+## Tech Stack
+- Backend: Java, Spring Boot
+- Frontend: React, TypeScript
+- Database: MySQL
 
-> npx
-> "create-vite"
+## My Contributions
+- Developed backend APIs using Spring Boot
+- Designed database schema and queries
+- Implemented frontend features using React
+- Fixed bugs and improved performance
 
-│
-◇  Project name:
-│  balance-web
-│
-◇  Select a framework:
-│  React
-│
-◇  Select a variant:
-│  TypeScript
-│
-◇  Scaffolding project in /Users/minlwin/git/onestop-12/balance-web...
-│
-└  Done. Now run:
-
-  cd balance-web
-  npm install
-  npm run dev
-```
-
-Adding Dependencies
-
-```
-cd balance-web
-
-# Dependency for Form Processing
-npm i react-hook-form
-
-# Dependency for Navigation
-npm i react-router
-
-# Dependency for REST Client
-npm i axios
-```
-
-## Prepare Database
-
-Pulling PostgreSQL Docker Image
-```
-docker pull postgres
-```
-
-Docker Compose file for PostgreSQL
-```
-networks:
-  balance-net:
-
-volumes:
-  balance-volume:
-
-services:
-  db:
-    image: postgres
-    container_name: balance-db
-    environment:
-      - TZ=Asia/Yangon
-      - POSTGRES_USER=balance
-      - POSTGRES_PASSWORD=balance
-      - POSTGRES_DB=balance
-    networks:
-      - balance-net
-    ports:
-      - 5432:5432
-    volumes:
-      - balance-volume:/var/lib/postgresql/data
-```
-
-Running Docker Compose File
-```
-docker compose up -d
-```
+## Note
+This project was developed with guidance from my instructor.
